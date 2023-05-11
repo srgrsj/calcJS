@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Calc</title>
+</head>
+<body>
+	<input id="input" type="text" name="name" value="0" readonly>
+	<br>
+	<table>		
+		<tr>
+			<td><button class="button" onclick="addDigit(7)">7</button></td>
+			<td><button class="button" onclick="addDigit(8)">8</button></td>
+			<td><button class="button" onclick="addDigit(9)">9</button></td>
+			<td><button class="button" onclick="operation('/')">/</button></td>
+		</tr>
+		<tr>
+			<td><button class="button" onclick="addDigit(4)">4</button></td>
+			<td><button class="button" onclick="addDigit(5)">5</button></td>
+			<td><button class="button" onclick="addDigit(6)">6</button></td>
+			<td><button class="button" onclick="operation('*')">*</button></td>
+		</tr>
+		<tr>
+			<td><button class="button" onclick="addDigit(1)">1</button></td>
+			<td><button class="button" onclick="addDigit(2)">2</button></td>
+			<td><button class="button" onclick="addDigit(3)">3</button></td>
+			<td><button class="button" onclick="operation('+')">+</button></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button id="null" onclick="addDigit(0)">0</button></td>
+			<td><button class="button" onclick="reset()">C</button></td>
+			<td><button class="button" onclick="operation('-')">-</button></td>
+		</tr>
+		<tr>
+			<td colspan="4"><button id="Eq" onclick="result()">=</button></td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
